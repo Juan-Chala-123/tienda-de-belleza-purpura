@@ -1,0 +1,272 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    overflow-x: hidden;
+    font-family: var(--font-geist-sans);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    background-color: white;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Centra los enlaces del centro */
+    align-items: center;
+    padding: 5px 0;
+    flex-direction: column;
+}
+
+nav .logo {
+    position: absolute;
+    left: 32px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.navbar-top,
+.navbar-bottom {
+  display: flex;
+  align-items: center; /* Centra los elementos verticalmente */
+  padding: 10px 20px;
+  justify-content: space-between; /* Distribuye el espacio entre los elementos */
+}
+
+.buscador {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre el buscador y los enlaces */
+    width: 700px;
+    height: 30px;
+    border-radius: 30px;
+    border: solid black;
+    padding: 0 20px;
+}
+
+.active {
+    color: purple;
+}
+
+.purpura {
+    color: rgb(103, 73, 103);
+}
+
+.img {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+}
+
+.iconos {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 80px;
+}
+
+.enlaces-centro {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.enlaces-centro a {
+    color: black; /* Color del texto */
+    font-size: 1.2rem; /* Tamaño de fuente */
+    text-decoration: none; /* Elimina el subrayado */
+    padding: 5px 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    position: relative; /* Necesario para la línea debajo */
+    transition: color 0.3s ease; /* Suaviza el cambio de color */
+}
+
+/* Estilo para el enlace activo */
+.enlaces-centro a.active {
+    color: purple; /* Color del enlace activo */
+}
+
+.enlaces-centro a.active::after {
+    content: ""; /* Crea la línea debajo */
+    position: absolute;
+    bottom: -5px; /* Ubica la línea debajo del texto */
+    left: 0;
+    width: 100%; /* Ancho de la línea */
+    height: 2px; /* Grosor de la línea */
+    background-color: purple; /* Color de la línea */
+}
+
+/* Efecto hover para los enlaces */
+.enlaces-centro a:hover {
+    color: rgb(103, 73, 103); /* Cambia el color al pasar el cursor */
+}
+
+.enlaces-derecha {
+    position: absolute;
+    right: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: black;
+    font-size: 1.2rem;
+    background-color: rgb(200, 148, 200);
+    width: 200px;
+    border: solid transparent;
+    border-radius: 30px;
+}
+
+.enlaces-derecha:hover {
+  background-color: azure;
+  border: solid rgb(200, 148, 200);
+  transition: 0.3s;
+}
+
+.enlaces-derecha:hover a {
+  color: rgb(200, 148, 200);
+  transition: 0.3s;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagen-fondo {
+    background-image: url('/images/imagen-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-fondo h1 {
+    color: white;
+    font-size: 3rem;
+    text-shadow: 2px 2px 8px #000;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 6rem;
+}
+
+.imagen-fondo .belleza {
+    color: rgb(231, 152, 231);
+}
+
+.imagen-fondo .natural {
+    display: block;
+}
+
+.imagen-fondo a {
+    margin-top: 45px;
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+    text-align: center;
+    color: purple;
+    border-radius: 45px;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    background-color: #1A1C25;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Distribuye las columnas uniformemente */
+    gap: 1px;
+}
+
+.col {
+    flex: 1; /* Cada columna ocupa el mismo espacio */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Centra el contenido horizontalmente */
+    gap: 15px;
+    font-size: 0.8rem;
+    padding: 80px 80px 20px 80px;
+    color: white;
+}
+
+.col .purple {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.col a {
+    color: gray;
+}
+
+.col a:hover {
+    color: white;
+}
+
+.icons {
+    padding: 15px 0 0 0;
+}
+
+.icons .icono {
+    padding: 0 15px 0 15px;
+}
+
+.email {
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    width: 250px;
+}
+
+.linea-final {
+    width: 90%;
+    height: 1px;
+    margin: 20px auto;
+    background-color: gray;
+}
+
+.final {
+    color: gray;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
