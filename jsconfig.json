@@ -1,7 +1,17 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["src/*"]
     }
-  }
+  },
+  "include": [
+    "src/**/*",
+    "node_modules/@types/**/*",
+    "components.d.ts"
+, "src/app/components/icons/person.js", "src/app/components/icons/bolsa.js"  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }

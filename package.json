@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "purpura",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "mysql2": "^3.14.5",
+    "next": "15.5.2",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.2"
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.3.0",
+    "@types/react": "19.1.11",
+    "typescript": "5.9.2"
   }
 }
