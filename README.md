@@ -20,6 +20,6 @@ You can start editing the page by modifying `app/page.js`. The page auto-updates
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Diseño de la pagina - Figma
+## Page design - Figma
 
 [Figma](https://www.figma.com/site/NRk76182CwIKVfmHkjyHNj/Purpura?node-id=0-4&t=Qid919pu1AKkVQmB-1)
