@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: gitleaks-detect
+        name: gitleaks detect
+        entry: gitleaks detect --source . --verbose --redact --report-path gitleaks-report.json
+        language: system
+        types: [file]
