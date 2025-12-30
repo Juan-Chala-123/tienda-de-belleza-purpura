@@ -2,6 +2,7 @@ services:
   app:
     container_name: app-purpura
     build: .
+    image: purple-image
     ports:
       - 4000:3000
     environment:
