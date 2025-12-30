@@ -1,0 +1,24 @@
+services:
+  app:
+    container_name: app-purpura
+    build: .
+    ports:
+      - 4000:3000
+    environment:
+      - DATABASE_URL
+    depends_on:
+      - db
+    
+  db:
+    image: postgres:16
+    container_name: db-purpura
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=12Purpura34
+      - POSTGRES_USER=postgres
+    volumes:
+      - db-purpura-data:/var/lib/postgresql/data
+
+volumes:
+  db-purpura-data:
