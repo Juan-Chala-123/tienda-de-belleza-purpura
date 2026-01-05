@@ -7,16 +7,6 @@ services:
       - 4000:3000
     environment:
       - DATABASE_URL
-    develop:
-      watch:
-        - action: sync
-          path: ./src
-          target: /app/src
-          ignore:
-            - node_modules/
-        - action: rebuild
-          path: package.json
-
     depends_on:
       - db
     
