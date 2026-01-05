@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Sql queries
 *.sql
+
+# postgres data, postgres-config
+postgres-config
